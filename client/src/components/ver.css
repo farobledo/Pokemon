@@ -1,0 +1,95 @@
+body {
+    background-image: url(../images/pokemon/esta2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.logo {
+    /* que imagen sea responsive y se ponga redonda  */
+    border-radius: 10px;
+    width: 340px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 5%;
+}
+
+/* width: 30%;
+    height: 40%;
+   border-radius: 50%; */
+
+
+.logo:hover {
+    /* que aumente el tamaño de la imagen */
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.entrada{
+    /* que el titulo este centrado */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mia{
+    border-radius: 10px;
+    width: 5%;
+    height: 10%;
+    margin-left: 40%;
+    margin-top: -20px;
+}
+
+.subtitle{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 20px;
+}
+
+.redes{
+    background-image: url(../images/raios.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.redes:hover{
+    background-image: url(../images/raios.gif);
+    /* que aumente el tamaño de la imagen */
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.derechos{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-image: url(../images/raios.gif);
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20rem;
+    font-size: 20px;
+}
+
+.button:hover{
+    background-image: url(../images/imagen.gif);
+    color: #fff;
+}
+
+

@@ -1,0 +1,44 @@
+body{
+    background-color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.poketitulo{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+}
+
+.poke{
+    width: 60px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 8%;
+}
+
+.poke:hover{
+    transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+}
+
+.footer_img{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.footer{
+    margin-left: 30%;
+    color: #fff;
+   
+}
+
+.footer_titulo{
+    margin-left: 5%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
