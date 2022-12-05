@@ -4,7 +4,7 @@ import { getDetail, getPokemonName } from '../redux/actions';
 import { useParams, useLocation } from 'react-router-dom';
 import Loading from './loading';
 import CardDetail from './cardDetail';
-import detail from './detail.module.css';
+import detail from '../css/detail.module.css';
 import imgPokemons from '../images/home1.jpg';
 import thunder from '../images/3Poy.gif';
 function useQuery() {

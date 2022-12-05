@@ -1,5 +1,5 @@
 import React from "react";
-import cardDetail from "./cardDetail.module.css";
+import cardDetail from "../css/cardDetail.module.css";
 import ButtonModify from "./buttonModify";
 //  import { modifyPoke } from '../redux/actions';
 import { useNavigate } from "react-router-dom";

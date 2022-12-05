@@ -1,5 +1,5 @@
 import React from 'react';
-import buttonPage from './buttonPage.module.css';
+import buttonPage from '../css/buttonPage.module.css';
 import pokeButton from '../images/close-pokeball.png';
 
 const ButtonPage = ({pokemonReact, page, setPage}) => {

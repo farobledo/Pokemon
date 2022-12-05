@@ -1,5 +1,5 @@
 import React from 'react';
-import buttonReset from './buttonReset.module.css';
+import buttonReset from '../css/buttonReset.module.css';
 import pokeButton from '../images/close-pokeball.png';
 
 const ButtonReset = ({setPokemonReact, state, setPage, renderCards}) => {

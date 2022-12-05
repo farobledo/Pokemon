@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react'
-import loading from './loading.module.css'
+import loading from '../css/loading.module.css'
 import pikachuLoad from '../images/loading.gif'
 
 

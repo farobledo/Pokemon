@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import nav from "./nav.module.css";
+import nav from "../css/nav.module.css";
 import pokeButton from "../images/close-pokeball.png";
 // import cielo from '../images/pokemon/picachu2.jpg';
 

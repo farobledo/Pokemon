@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/pokemones.css";
+import "../css/pokemones.css";
 import Pokemon1 from "../icono/abra_pokemon.gif";
 import Pokemon2 from "../icono/absol_pokemon.gif";
 import Pokemon3 from "../icono/aerodactyl_pokemon.gif";
@@ -48,7 +48,9 @@ import Icono4 from "../icono/raichu.gif";
 export default function pokemones() {
   return (
     <div>
-      <a href="/home">Volver Atras</a>
+      <button className="button">
+        <a href="/home">Salir al Home</a>
+      </button>
       <h1 className="poketitulo">Pokemones mojis</h1>
       <img className="poke" src={Pokemon1} alt="Icono" />
       <img className="poke" src={Pokemon2} alt="Icono" />

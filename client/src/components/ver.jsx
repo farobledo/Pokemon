@@ -1,5 +1,5 @@
 import React from "react";
-import  "../components/ver.css";
+import  "../css/ver.css";
 import Foto1 from "../images/pokemon/dog.png";
 import Foto2 from "../images/pokemon/food.png";
 import Foto3 from "../images/pokemon/videojuegos.png";

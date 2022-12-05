@@ -1,5 +1,5 @@
 import React from 'react';
-import buttonModify from './buttonModify.module.css';
+import buttonModify from '../css/buttonModify.module.css';
 import pokeButton from '../images/close-pokeball.png';
 
 const ButtonModify = () => {

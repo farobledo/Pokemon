@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { createPokemon, getTypes, cleanPokeModify } from "../redux/actions";
 import { validate } from "../validators/validateCreateForm";
 import ButtonCreate from "./buttonCreate";
-import create from "./create.module.css";
+import create from "../css/create.module.css";
 import { useNavigate } from "react-router-dom";
 import thunder from "../images/thunder.png";
 import imgPokemons from "../images/pokemon/picachu2.jpg";

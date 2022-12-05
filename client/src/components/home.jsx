@@ -14,7 +14,7 @@ import Loading from "./loading";
 import ButtonPage from "./buttonPage";
 import ButtonReset from "./buttonReset";
 import Footer from './footer';
-import home from "./home.module.css";
+import home from "../css/home.module.css";
 import thunder from "../images/thunder.png";
 import imgPokemons from "../images/pokemon/picachu2.jpg";
 import Nav from "../components/nav";

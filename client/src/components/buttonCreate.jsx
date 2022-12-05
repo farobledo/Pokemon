@@ -1,5 +1,5 @@
 import React from 'react';
-import buttonCreate from './buttonCreate.module.css';
+import buttonCreate from '../css/buttonCreate.module.css';
 import pokeButton from '../images/open-pokeball.png';
 
 

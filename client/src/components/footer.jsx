@@ -1,5 +1,5 @@
 import React from "react";
-import footer from "./footer.module.css";
+import footer from "../css/footer.module.css";
 import Icono1 from "../icono/weavile.gif";
 import Icono2 from "../icono/abra_pokemon.gif";
 import Icono3 from "../icono/arbok.gif";

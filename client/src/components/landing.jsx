@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import landing from "./landing.module.css";
+import landing from "../css/landing.module.css";
 import Foto from "../icono/umbreon_shiny.gif";
 import Foto1 from "../icono/umbreon.gif";
 

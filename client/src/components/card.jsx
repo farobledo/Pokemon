@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 // import { deletePoke } from '../redux/actions';
-import card from './card.module.css';
+import card from '../css/card.module.css';
 // import { FaWindowClose } from 'react-icons/fa';
 
 const Home = ({ id, img, name, power, types, createInDB }) => {
