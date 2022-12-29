@@ -165,7 +165,7 @@ const Home = () => {
             </div>
             {/* case filterWeight */}
             <div className={home.filters}>
-              <label htmlFor="">Filtrar popr Altura: </label>
+              <label htmlFor="">Filtrar por Altura: </label>
               <select
                 name="height"
                 onChange={(event) => functionsFilters(event, filterHeight)}

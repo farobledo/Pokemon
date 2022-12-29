@@ -60,7 +60,7 @@ const Nav = () => {
 
       <div className={nav.containCreate}>
         <button onClick={handleClick} id="ver">
-        Ver Mas!!
+        Projectos!!
           <img src={pokeButton} className={nav.img1} alt="Img not found" />
           <img src={pokeButton} className={nav.img2} alt="Img not found" />
         </button>

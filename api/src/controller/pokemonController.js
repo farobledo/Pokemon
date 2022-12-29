@@ -67,11 +67,15 @@ module.exports = {
                     }
                 });
                 res.send([...pokemonsDB, ...fullInfoApi]);
+                // si existe en la base de datos, no se puede agregar a la base de datos
+               
+              
             } catch (error) {
                 res.send(error.message);
             }
         }
     },
+    
     detail: async (req, res) => {
         let id = req.params.id;
         if(id.length < 8) {
@@ -110,6 +114,7 @@ module.exports = {
             } 
         }
     },
+
     create: async (req, res) => {
         let { name, life, atack, defense, speed, weight, height, type, img, id } = req.body;
         try {
@@ -124,7 +129,8 @@ module.exports = {
                     speed,
                     height,
                     weight,
-                    img
+                    img,
+                    
                 },{
                     where: { id, }
                 });
@@ -142,7 +148,8 @@ module.exports = {
                     speed,
                     height,
                     weight,
-                    img
+                    img,
+            
                 });
                 let types = await Type.findAll({
                     where: {name: type}
@@ -150,10 +157,17 @@ module.exports = {
                 pokemonCreate.addType(types);
                 res.send('Creado con exito');
             }
+            if (pokemonsDB.find(elem => elem.name === fullInfoApi.name)) {
+                alert('El pokemon ya existe en la base de datos')
+            } else {
+                pokemonsDB.push(fullInfoApi);
+            }
+    
         } catch (error) {
            console.log(error.message);
         }
     },
+
     delete: async (req, res) => {
         let namePoke = req.query.name;
         try {

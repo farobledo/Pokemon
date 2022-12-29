@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector} from "react-redux";
 import { createPokemon, getTypes, cleanPokeModify } from "../redux/actions";
 import { validate } from "../validators/validateCreateForm";
 import ButtonCreate from "./buttonCreate";
@@ -15,8 +15,19 @@ const Create = () => {
   const dispatch = useDispatch();
   const stateRedux = useSelector((state) => state);
   const navigate = useNavigate();
-  const [errors, setErrors] = React.useState({});
-  const [newPokemon, setNewPokemon] = React.useState({
+  const [errors, setErrors] = React.useState({
+    name: "",
+    life: "",
+    defense: "",
+    atack: "",
+    speed: "",
+    weight: "",
+    height: "",
+    type: [],
+   
+  });
+
+    const [newPokemon, setNewPokemon] = React.useState({
     name: "",
     life: "",
     defense: "",
@@ -28,7 +39,12 @@ const Create = () => {
     id: stateRedux.pokeModify.id,
   });
 
-  React.useEffect(() => {
+ 
+
+  //  creamos el metodo de erros del pokemon creado en la base de datos
+
+
+React.useEffect(() => {
     dispatch(getTypes());
     return () => {
       dispatch(cleanPokeModify());
@@ -77,6 +93,8 @@ const Create = () => {
     );
   };
 
+
+
   const selectType = (event) => {
     if (event.currentTarget.checked) {
       let newType = [event.target.value];
@@ -105,7 +123,19 @@ const Create = () => {
   };
 
   const handleClick = () => {
-    navigate("/home");
+    // si el pokemon exizte en la base de datos entonces que me muestre un mensaje de error y que no me deje crearlo
+
+    // le pasamos el error del pokemon creado en la base de datos y que no se pueda crear de nuevo
+    setErrors(
+      validate({
+        ...newPokemon,
+        name: newPokemon.name,
+      })
+    );
+  alert("No se puede crear el pokemon porque ya existe en la base de datos")
+
+      navigate("/home");
+    
    
   };
 
